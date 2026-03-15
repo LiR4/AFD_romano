@@ -1,0 +1,33 @@
+stateDiagram-v2
+    [*] --> q0
+
+    q0 --> qI : I / +1
+    q0 --> qV : V / +5
+    q0 --> qX : X / +10
+    q0 --> qL : L / +50
+    q0 --> qC : C / +100
+    q0 --> qD : D / +500
+    q0 --> qM : M / +1000
+
+    qI --> qI : I / +1
+    qI --> qV : V / +3
+    qI --> qX : X / +8
+
+    qX --> qL : L / +30
+    qX --> qC : C / +80
+
+    qC --> qD : D / +300
+    qC --> qM : M / +800
+
+    qV --> qI : I / +1
+    qL --> qX : X / +10
+    qD --> qC : C / +100
+
+    qI --> qErro : símbolo inválido
+    qV --> qErro : símbolo inválido
+    qX --> qErro : símbolo inválido
+    qL --> qErro : símbolo inválido
+    qC --> qErro : símbolo inválido
+    qD --> qErro : símbolo inválido
+
+    qErro --> qErro
