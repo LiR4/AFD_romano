@@ -52,9 +52,6 @@ Usaremos estados que representam:
 
 último símbolo lido (para decidir soma/subtração)
 
-### estados inválidos
-                            𝑄 = {𝑞0, 𝑞𝐼, 𝑞𝑉, 𝑞𝑋, 𝑞𝐿, 𝑞𝐶, 𝑞𝐷, 𝑞𝑀, 𝑞𝑒𝑟𝑟𝑜}
-
 | Estado | Significado                   |
 | ------ | ----------------------------- |
 | q0     | início (nenhum símbolo ainda) |
